@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Slab&display=swap');
+
+.navbar {
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+
+.navbar-shadow {
+    box-shadow: 1px 4px 4px grey;
+}
+
+.navParent {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 75%;
+    align-items: center;
+    height: 3.7rem;
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.title>a:hover {
+    color: rgba(156, 35, 221, 0.618);
+}
+
+.title>a {
+    text-decoration: none;
+    font-size: 2.1rem;
+
+}
+
+.list-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 12.5vmax;
+    width: 20%;
+    height: inherit;
+}
+
+.list {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    list-style: none;
+}
+
+.list>li {
+    padding: 8px;
+    font-size: 1.25rem;
+}
+
+.list>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+.list>li>a:hover {
+    color: rgb(249, 246, 249);
+}
+
+
+@media screen and (max-width:900px) {
+    .navParent {
+        width: 100%;
+    }
+
+    .title {
+        width: 100%;
+        flex: 1;
+    }
+
+    .list-container {
+        position: relative;
+        width: 100%;
+        flex: 1;
+        right: 0;
+    }
+    .list>li {
+        padding: 5px;
+        font-size: 16px;
+    }
+}

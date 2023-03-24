@@ -1,0 +1,286 @@
+.innings-container>p {
+    margin: 5px auto;
+    width: 90%;
+    color: rgb(27, 86, 138);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.innings-container>div:last-child {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.team-name {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    border-radius: 2px;
+}
+
+.team-name>p {
+    font-size: 1.2rem;
+    margin: 8px 15px;
+}
+
+.batters {
+    display: flex;
+    width: 90%;
+    margin: 3px auto 1px auto;
+    background-color: #ecebeb;
+    border-radius: 2px;
+}
+
+.batters>div:first-child {
+    display: flex;
+    flex: 1.7;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.batters>div:last-child {
+    display: flex;
+    width: 56%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.batters>div>p {
+    text-align: center;
+    margin: 5px 10px;
+    min-width: 2.5vmax;
+}
+
+.players {
+    display: flex;
+    width: 90%;
+    margin: 3px auto 1px auto;
+    border-radius: 1px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.325);
+}
+
+.players>div:first-child {
+    display: flex;
+    width: 44%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.batter-name {
+    color: rgb(2, 92, 92);
+}
+
+.batter-name>p {
+    text-align: center;
+    margin: 5px 0px 5px 14px;
+}
+
+.player-status>p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+
+.player-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.players>div:last-child {
+    display: flex;
+    width: 56%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.players>div>p {
+    text-align: center;
+    margin: 5px 10px;
+    min-width: 2.5vmax;
+}
+
+
+
+.bowlers {
+    display: flex;
+    width: 90%;
+    margin: 3px auto 1px auto;
+    border-radius: 2px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.325);
+}
+
+.bowlers>div:first-child {
+    display: flex;
+    width: 25%;
+    flex-direction: row;
+}
+
+.bowlers>div:last-child {
+    display: flex;
+    width: 75%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bowlers>div>p {
+    text-align: center;
+    min-width: 2vmax;
+    margin: 5px 14px;
+}
+
+
+
+.didNotBat {
+    align-items: center;
+
+}
+
+.didNotBat>div:first-child {
+    flex: 1;
+
+}
+
+.didNotBat>div:last-child {
+    flex: 4;
+
+}
+
+.NoScorecard {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 2rem;
+}
+
+.fowContainer {
+    display: flex;
+    width: 90%;
+    margin: 3px auto 1px auto;
+    border-radius: 1px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.325);
+}
+
+.fallOfWickets {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.fallOfWickets>div {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wicketFall>span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    margin: 7px 7px;
+    justify-content: space-between;
+}
+
+.wicketFall>span>p {
+    margin: 0px;
+    text-align: center;
+}
+
+@media screen and (max-width : 900px) {
+    .team-name {
+        width: 98%;
+    }
+
+    .batters {
+        width: 98%;
+    }
+
+    .batters>div>p {
+        text-align: center;
+    }
+
+    .players {
+        width: 98%;
+    }
+
+    .players>div>p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+
+    .player-status>p {
+        font-size: 11px;
+    }
+
+    .batter-name>p {
+        margin: 1px;
+    }
+
+    .players>div:first-child {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .extras {
+        width: 98%;
+    }
+
+    .extras>div:first-child {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 5px;
+    }
+
+    .yetToBat {
+        width: 98%;
+    }
+
+    .yetToBat>div:first-child {
+        width: 98%;
+    }
+
+    .yetToBat>div>div:first-child {
+        align-self: flex-start;
+        margin-left: 5px;
+    }
+
+    .yetToBatNames {
+        width: 95%;
+        justify-content: flex-start;
+        align-self: center;
+        flex-wrap: wrap;
+    }
+
+    .yetToBatNames>p {
+        font-size: 13px;
+        margin: 4px;
+    }
+
+    .bowlers {
+        width: 98%;
+    }
+
+    .bowlers>div>p {
+        min-width: 4vmax;
+        margin: 5px 1px;
+        font-size: 13px;
+        text-align: center;
+    }
+    .fallOfWickets>div {
+        flex-wrap: wrap;
+    }
+}

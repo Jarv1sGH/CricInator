@@ -1,0 +1,336 @@
+.match-details-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 70rem;
+    width: 75%;
+    margin: 0.5vmax auto;
+    background-color: rgba(255, 255, 255, 0.835);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.scorecard {
+    width: 65%;
+}
+
+.scorecard-header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    height: 15%;
+    width: 98%;
+    margin: 0 auto 4px auto;
+    border-bottom: 2px solid grey;
+}
+
+.scorecard-header>h1 {
+    text-align: center;
+}
+
+
+
+.scorecard-header>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: auto;
+    width: 90%;
+    bottom: 0;
+}
+
+.scorecard-header>div>p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.options {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 3rem;
+}
+
+.options>span {
+    margin-bottom: 7px;
+    width: 5vmax;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.active {
+    border-radius: 1px;
+    border-bottom: 3px solid rgba(238, 174, 202, 1);
+}
+
+.scorecard-overview-1 {
+    border-bottom: 2px solid grey;
+    width: 98%;
+    margin: auto;
+}
+
+.refresh {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+}
+
+.refresh>button {
+    background: rgba(148, 188, 233, 0.791) 90%;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    width: 6vmax;
+    height: 1.2vmax;
+    margin-right: 13px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.refresh>button:hover {
+    background: #ecebeb;
+}
+
+.scorecard-overview-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 98%;
+    margin: auto;
+    border-bottom: 2px solid grey;
+}
+
+.scorecard-overview-2>p:last-child {
+    margin-left: 13px;
+}
+
+.scorecard-overview-2>p:last-child>span {
+    font-weight: bolder;
+}
+
+
+.current-score {
+    width: 98%;
+}
+
+
+.player-name {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.player-name>div:first-child {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 13px;
+}
+
+.player-name>div:last-child {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.batting {
+    margin: 5px;
+}
+
+.batting>div>div>p,
+.bowling>div>div>p {
+    text-align: center;
+    min-width: 2.5vmax;
+    font-size: 14px;
+}
+
+.player {
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.bowling {
+    margin: 5px;
+}
+
+.key-stats {
+    margin-top: 0.5rem !important;
+    margin: auto;
+    width: 98%;
+}
+
+.key-stats>div:first-child {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    border-radius: 2px;
+    width: 99%;
+    height: 2vmax;
+    margin: auto;
+}
+
+.key-stats>div>p {
+    margin-left: 5px;
+}
+
+.key-stats>p {
+    margin-left: 5px;
+}
+
+.commentary {
+    border-left: 2px solid grey;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.commentary>h1 {
+    margin-top: 2px;
+}
+
+.commentary>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 98%;
+}
+
+
+
+.commText {
+    display: flex;
+    flex-direction: row;
+    margin: 11px auto;
+    width: 98%;
+}
+
+.commText>span {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-right: 15px;
+}
+
+.commText>p {
+    margin: 1px 4px;
+    width: 90%;
+}
+
+.last-over {
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    margin: 11px auto;
+    background: rgba(176, 206, 240, 0.752);
+    border-radius: 2px;
+}
+
+
+.last-over-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.last-over-wrapper>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1px solid rgba(128, 128, 128, 0.515);
+    margin: auto 2px;
+}
+
+.last-over-wrapper>div>p {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 2px 5px;
+    text-align: center;
+}
+
+.last-over>div:first-child>p {
+    margin-left: 2px;
+    font-weight: bolder !important;
+    font-size: 1.7rem !important;
+}
+
+@media screen and (max-width : 900px) {
+    .match-details-container {
+        width: 100%;
+    }
+
+    .scorecard-header>h1 {
+        font-size: 20px;
+    }
+
+    .scorecard-header>div {
+        width: 100%;
+    }
+
+    .scorecard-header>div>p {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .scorecard {
+        width: 100%;
+    }
+
+    .commentary {
+        width: 100%;
+    }
+
+    .key-stats>div:first-child {
+        height: 3vmax;
+        /* margin: auto; */
+    }
+
+    .options {
+        width: 75%;
+    }
+
+    .options>span {
+        width: 25%;
+    }
+
+    .scorecard-overview-1>h2 {
+        font-size: 20px;
+        margin-left: 4px;
+    }
+
+    .refresh>button {
+        font-size: 10px;
+        text-align: center;
+        width: 20%;
+        height: 32%;
+    }
+
+    .last-over-wrapper>div>p {
+        font-size: 11px;
+    }
+}

@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Components/Home/Home';
+import Navbar from './Components/Header/Navbar';
+import MatchDetails from './Components/matchDetails/MatchDetails';
+import PlayerDetails from './Components/PlayerDetails/PlayerDetails';
+import NewsDetail from './Components/News/NewsDetail';
+import Matches from './Components/Matches/Matches';
+import Schedule from './Components/Schedule/Schedule';
+import About from './Components/About/About';
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Home />} ></Route>
+          <Route exact path="/match/:matchId" element={<MatchDetails />} ></Route>
+          <Route exact path="/player/:playerId" element={<PlayerDetails />} ></Route>
+          <Route exact path="/news/:newsId" element={<NewsDetail />} ></Route>
+          <Route exact path="/matches" element={<Matches />} ></Route>
+          <Route exact path="/schedule" element={<Schedule />} ></Route>
+          <Route exact path="/about" element={<About />} ></Route>
+        </Routes>
+      </Router>
+
+    </>
   );
 }
 
