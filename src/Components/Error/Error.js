@@ -8,7 +8,7 @@ const Error = () => {
         <p>
           Its not you it's me.
         </p>
-          <span>or the API daily limit is reached</span>
+          <span>Try Reloading if that doesn't work, the API daily limit is reached</span>
       </div>
     </div>
   )

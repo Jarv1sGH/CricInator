@@ -175,7 +175,7 @@ const Scorecard = (props) => {
 
               {
                 innings1batsmenDataArr && innings1batsmenDataArr.filter((item) => item?.[1].outDesc !== "").map((item) => (
-                  <div className="players" key={item[1]?.batId}>
+                  <div className="players" key={item[0]}>
                     <div>
                       <div className='batter-name'><p>{item[1]?.batName}</p></div>
                       <div className='player-status'><p>{item[1]?.outDesc}</p></div>
@@ -220,7 +220,7 @@ const Scorecard = (props) => {
                       <div className='player-status yetToBatNames'>
                         {
                           innings1batsmenDataArr && innings1batsmenDataArr.filter((item) => item[1]?.outDesc === "").map((item) => (
-                            <p key={item[1]?.batId}> {item[1]?.batName} </p>
+                            <p key={item[0]}> {item[1]?.batName} </p>
                           ))}
                       </div>
                     </div>
@@ -235,7 +235,7 @@ const Scorecard = (props) => {
                   <div className='batter-name wicketFall'>
                     {
                       innings1WicketsDataArr && innings1WicketsDataArr.map((item) => (
-                        <span key={item[1].batId}> <p> {item[1]?.wktRuns}-{item[1]?.wktNbr}</p> <p>{item[1]?.batName}</p></span>
+                        <span key={item[0]}> <p> {item[1]?.wktRuns}-{item[1]?.wktNbr}</p> <p>{item[1]?.batName}</p></span>
                       ))
                     }
                   </div>
@@ -260,7 +260,7 @@ const Scorecard = (props) => {
 
               {
                 innings1bowlersDataArr && innings1bowlersDataArr.map((item) => (
-                  <div key={item[1]?.bowlerId} className="bowlers">
+                  <div key={item[0]} className="bowlers">
                     <div>
                       <p style={{ "color": "rgb(27, 86, 138)" }}> {item?.[1]?.bowlName}</p>
                     </div>
@@ -303,7 +303,7 @@ const Scorecard = (props) => {
               </div>
               {
                 innings2batsmenDataArr && innings2batsmenDataArr.map((item) => (
-                  <div className="players" key={item[1]?.batId}>
+                  <div className="players" key={item[0]}>
                     <div>
                       <div className='batter-name'><p>{item[1]?.batName}</p></div>
                       <div className='player-status'><p>{item[1]?.outDesc}</p></div>
@@ -347,7 +347,7 @@ const Scorecard = (props) => {
                       <div className='player-status yetToBatNames'>
                         {
                           innings2batsmenDataArr && innings2batsmenDataArr.filter((item) => item[1]?.outDesc === "").map((item) => (
-                            <p key={item[1].batId}>{item[1]?.batName}</p>
+                            <p key={item[0]}>{item[1]?.batName}</p>
                           ))}
                       </div>
                     </div>
@@ -362,7 +362,7 @@ const Scorecard = (props) => {
                   <div className='batter-name wicketFall'>
                     {
                       innings2WicketsDataArr && innings2WicketsDataArr.map((item) => (
-                        <span key={item[1].batId}> <p> {item[1]?.wktRuns}-{item[1]?.wktNbr}</p> <p>{item[1]?.batName}</p></span>
+                        <span key={item[0]}> <p> {item[1]?.wktRuns}-{item[1]?.wktNbr}</p> <p>{item[1]?.batName}</p></span>
                       ))
                     }
                   </div>
@@ -384,7 +384,7 @@ const Scorecard = (props) => {
 
               {
                 innings2bowlersDataArr && innings2bowlersDataArr.map((item) => (
-                  <div key={item[1]?.bowlerId} className="bowlers">
+                  <div key={item[0]} className="bowlers">
                     <div>
                       <p style={{ "color": "rgb(27, 86, 138)" }}> {item[1].bowlName}</p>
                     </div>
@@ -427,7 +427,7 @@ const Scorecard = (props) => {
 
               {
                 innings3batsmenDataArr && innings3batsmenDataArr.filter((item) => item[1]?.outDesc !== "").map((item) => (
-                  <div key={item[1]?.batId} className="players" >
+                  <div key={item[0]} className="players" >
                     <div>
                       <div className='batter-name'><p>{item[1]?.batName}</p></div>
                       <div className='player-status'><p>{item[1]?.outDesc}</p></div>
@@ -474,7 +474,7 @@ const Scorecard = (props) => {
                       <div className='player-status yetToBatNames'>
                         {
                           innings3batsmenDataArr && innings3batsmenDataArr.filter((item) => item[1]?.outDesc === "").map((item) => (
-                            <p key={item[1]?.batId} >{item[1]?.batName}</p>
+                            <p key={item[0]} >{item[1]?.batName}</p>
                           ))}
 
                       </div>
@@ -490,7 +490,7 @@ const Scorecard = (props) => {
                   <div className='batter-name wicketFall'>
                     {
                       innings3WicketsDataArr && innings3WicketsDataArr.map((item) => (
-                        <span key={item[1]?.batId}> <p> {item[1]?.wktRuns}-{item[1]?.wktNbr}</p> <p>{item[1]?.batName}</p></span>
+                        <span key={item[0]}> <p> {item[1]?.wktRuns}-{item[1]?.wktNbr}</p> <p>{item[1]?.batName}</p></span>
                       ))
                     }
                   </div>
@@ -515,7 +515,7 @@ const Scorecard = (props) => {
 
               {
                 innings3bowlersDataArr && innings3bowlersDataArr.map((item) => (
-                  <div key={item[1]?.batId} className="bowlers">
+                  <div key={item[0]} className="bowlers">
                     <div>
                       <p style={{ "color": "rgb(27, 86, 138)" }}> {item[1].bowlName}</p>
                     </div>
@@ -556,7 +556,7 @@ const Scorecard = (props) => {
               </div>
               {
                 innings4batsmenDataArr && innings4batsmenDataArr.filter((item) => item[1]?.outDesc !== "").map((item) => (
-                  <div className="players" key={item[1]?.batId}>
+                  <div className="players" key={item[0]}>
                     <div>
                       <div className='batter-name'><p>{item[1]?.batName}</p></div>
                       <div className='player-status'><p>{item[1]?.outDesc}</p></div>
@@ -600,7 +600,7 @@ const Scorecard = (props) => {
                       <div className='player-status yetToBatNames'>
                         {
                           innings4batsmenDataArr && innings4batsmenDataArr.filter((item) => item[1]?.outDesc === "").map((item) => (
-                            <p key={item[1]?.batId} >{item[1]?.batName}</p>
+                            <p key={item[0]} >{item[1]?.batName}</p>
                           ))}
                       </div>
                     </div>
@@ -615,7 +615,7 @@ const Scorecard = (props) => {
                   <div className='batter-name wicketFall'>
                     {
                       innings4WicketsDataArr && innings4WicketsDataArr.map((item) => (
-                        <span key={item[1]?.batId}> <p> {item[1]?.wktRuns}-{item[1]?.wktNbr}</p> <p>{item[1]?.batName}</p></span>
+                        <span key={item[0]}> <p> {item[1]?.wktRuns}-{item[1]?.wktNbr}</p> <p>{item[1]?.batName}</p></span>
                       ))
                     }
                   </div>
@@ -640,7 +640,7 @@ const Scorecard = (props) => {
 
               {
                 innings4bowlersDataArr && innings4bowlersDataArr.map((item) => (
-                  <div key={item[1]?.batId} className="bowlers">
+                  <div key={item[0]} className="bowlers">
                     <div>
                       <p style={{ "color": "rgb(27, 86, 138)" }}> {item[1].bowlName}</p>
                     </div>

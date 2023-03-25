@@ -9,6 +9,7 @@ import NewsDetail from './Components/News/NewsDetail';
 import Matches from './Components/Matches/Matches';
 import Schedule from './Components/Schedule/Schedule';
 import About from './Components/About/About';
+import Error from './Components/Error/Error';
 function App() {
 
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/matches" element={<Matches />} ></Route>
           <Route exact path="/schedule" element={<Schedule />} ></Route>
           <Route exact path="/about" element={<About />} ></Route>
+          <Route exact path="/error" element={<Error />} ></Route>
         </Routes>
       </Router>
 

@@ -84,7 +84,7 @@ const Home = () => {
                             :
                             <div className="home-container">
                                 <div className="match-wrapper">
-                                    <a className="card-heading" href="/">Live Matches</a>
+                                    <p className="card-heading">Live Matches</p>
                                     <div>
 
                                         {
@@ -112,7 +112,7 @@ const Home = () => {
 
                                 </div>
                                 <div className="match-wrapper">
-                                    <a className="card-heading" href="/match">Recent Matches</a>
+                                    <p className="card-heading">Recent Matches</p>
                                     <div>
                                         {
                                             recentMatchesArr?.filter(x => x !== undefined).length >= 4 ?

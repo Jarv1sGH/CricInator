@@ -79,6 +79,9 @@
     width: 98%;
     margin: auto;
 }
+.scorecard-overview-1>h2 {
+    margin-top: 10px;
+}
 
 .refresh {
     display: flex;
@@ -307,7 +310,6 @@
 
     .key-stats>div:first-child {
         height: 3vmax;
-        /* margin: auto; */
     }
 
     .options {
@@ -321,6 +323,7 @@
     .scorecard-overview-1>h2 {
         font-size: 20px;
         margin-left: 4px;
+        /* margin-top: 10px; */
     }
 
     .refresh>button {

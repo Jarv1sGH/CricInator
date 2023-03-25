@@ -93,6 +93,7 @@
 .squads>div>span {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     margin: 0;
     width: 100%;
     border-bottom: 1px solid rgba(128, 128, 128, 0.463);
@@ -110,8 +111,12 @@
     .squads {
         width: 100%;
     }
-
-    .squads>div>span>a>p {
-        font-size: 12px;
+    .teamPlayerName {
+        font-size: 14px !important;
+    }
+}
+@media screen and (max-width : 1200px) {
+    .teamPlayerName {
+        font-size: 14px !important;
     }
 }
