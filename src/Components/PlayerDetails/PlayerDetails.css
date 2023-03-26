@@ -30,7 +30,9 @@
     justify-content: center;
     flex: 3;
 }
-.profileDetail>h1,h2{
+
+.profileDetail>h1,
+h2 {
     margin: 0;
 }
 
@@ -85,7 +87,7 @@
     flex-direction: row;
     justify-content: space-between;
     border-radius: 2px;
-    width: 98%;
+    width: 96%;
     margin: 0 auto;
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
@@ -99,18 +101,14 @@
 }
 
 .batSummaryHeader>p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     font-weight: bolder;
     width: 4rem;
 }
 
 .batSummary>p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 4rem;
+    text-align: center;
 }
 
 .careerInfo>div {
@@ -137,25 +135,56 @@
     margin: 1px;
     color: #0f467e;
 }
-.summary>h3{
+
+.summary>h3 {
     margin-left: 10px;
 }
-@media screen and (max-width:900px) {
-    .playerDetailsContainer{
+@media screen and (max-width:1600px) {
+    .playerDetailsContainer {
         width: 100%;
     }
-    .careerWrapper{
+}
+@media screen and (max-width:1400px) {
+    .playerDetailsContainer {
+        width: 90%;
+    }
+
+    .careerWrapper {
         flex-direction: column;
     }
-    .summary>div{
+
+    .summary>div {
         overflow-x: scroll;
     }
-    .battingSummary, .bowlingSummary{
+
+    .battingSummary,
+    .bowlingSummary {
         width: fit-content;
         display: flex;
         flex-direction: column;
     }
-    .batSummaryHeader{
+
+    .batSummaryHeader {
+        width: 100%;
+    }
+
+    .batSummary {
+        width: 100%;
+    }
+    .careerInfo{
+        display: flex;
+        flex-direction: column; 
+    }
+    .careerInfo>div{
+        align-self: center;
+        width: 98%;
+    }
+    .personalInfo{
+        border: none;
+    }
+}
+@media screen and (max-width:900px) {
+    .playerDetailsContainer {
         width: 100%;
     }
 }
