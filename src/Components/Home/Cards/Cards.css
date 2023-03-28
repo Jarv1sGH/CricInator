@@ -98,7 +98,7 @@
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:480px) {
     .live-card {
         max-width: 75%;
         min-width: 75%;
