@@ -56,17 +56,20 @@ const Schedule = () => {
     const formattedHours =
       hours > 12 ? (hours - 12).toString().padStart(2, "0") : hours;
 
-    // Get the time zone offset in minutes to show the utc along with the time
+    // Get the time zone offset in minutes to show the utc offset along with the time
     const timezoneOffset = startDate.getTimezoneOffset();
-    const offsetHours = Math.abs(Math.floor(timezoneOffset / 60))
-      .toString()
+    console.log(timezoneOffset)
+    const offsetHours = Math.floor(Math.abs(timezoneOffset / 60))
+      .toString()   
       .padStart(2, "0");
     const offsetMinutes = (Math.abs(timezoneOffset) % 60)
       .toString()
       .padStart(2, "0");
+      console.log(timezoneOffset, offsetHours, offsetMinutes)
     const offsetSign = timezoneOffset > 0 ? "-" : "+";
-
-    return `${formattedHours}:${minutes}:${seconds} ${amPm} (UTC${offsetSign}${offsetHours}:${offsetMinutes})`;
+    const utcOffset = `UTC${offsetSign}${offsetHours}:${offsetMinutes}`;
+    return `${formattedHours}:${minutes}:${seconds} ${amPm} (${utcOffset})`;
+    // return `${formattedHours}:${minutes}:${seconds} ${amPm} (UTC${offsetSign}${offsetHours}:${offsetMinutes})`;
   };
 
   return (
